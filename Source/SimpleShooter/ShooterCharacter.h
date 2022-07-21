@@ -33,11 +33,12 @@ public:
 
 	virtual float TakeDamage(float DamageAmount, FDamageEvent const& DamageEvent, AController* EventInstigator, AActor* DamageCauser) override;
 
+	void Shoot();
+
 private:
 	void MoveForward(float AxisValue);
 	void MoveRight(float AxisValue);
-	void Shoot();
-
+	
 	UPROPERTY(EditDefaultsOnly)
 	float MaxHealth = 100;
 
